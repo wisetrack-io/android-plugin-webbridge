@@ -4,6 +4,17 @@
 
 The **WiseTrack WebBridge Plugin** provides a seamless integration between the native Android environment and a web-based JavaScript SDK, enabling two-way communication between a WebView and the WiseTrack tracking system.
 
+## Installation
+**Add the WiseTrack SDK to your project**:
+
+- Add the dependency to your `app/build.gradle`:
+
+  ```gradle
+  implementation 'io.wisetrack:sdk:webbridge:2.0.0' // Replace with the latest version
+  ```
+
+- Sync your project with Gradle.
+
 
 ## How to Use
 
