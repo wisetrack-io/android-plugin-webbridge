@@ -52,10 +52,10 @@ class WTInitConfig {
     this.startTrackerAutomatically = true;
     this.customDeviceId = null;
     this.defaultTracker = null;
-//    this.appSecret = null;
-//    this.secretId = null;
-//    this.attributionDeeplink = null;
-//    this.eventBuffering = null;
+    this.appSecret = null;
+    this.secretId = null;
+    this.attributionDeeplink = null;
+    this.eventBuffering = null;
     this.logLevel = WTLogLevel.WARNING;
     this.oaidEnabled = false;
     this.referrerEnabled = true;
@@ -119,33 +119,33 @@ class WTInitConfig {
     return this;
   }
 
-//  setAppSecret(secret) {
-//    if (typeof secret === 'string' || secret === null) {
-//      this.appSecret = secret;
-//    }
-//    return this;
-//  }
-//
-//  setSecretId(secretId) {
-//    if (typeof secretId === 'string' || secretId === null) {
-//      this.secretId = secretId;
-//    }
-//    return this;
-//  }
-//
-//  setAttributionDeeplink(enabled) {
-//    if (typeof enabled === 'boolean' || enabled === null) {
-//      this.attributionDeeplink = enabled;
-//    }
-//    return this;
-//  }
-//
-//  setEventBuffering(enabled) {
-//    if (typeof enabled === 'boolean' || enabled === null) {
-//      this.eventBuffering = enabled;
-//    }
-//    return this;
-//  }
+  setAppSecret(secret) {
+    if (typeof secret === 'string' || secret === null) {
+      this.appSecret = secret;
+    }
+    return this;
+  }
+
+  setSecretId(secretId) {
+    if (typeof secretId === 'string' || secretId === null) {
+      this.secretId = secretId;
+    }
+    return this;
+  }
+
+  setAttributionDeeplink(enabled) {
+    if (typeof enabled === 'boolean' || enabled === null) {
+      this.attributionDeeplink = enabled;
+    }
+    return this;
+  }
+
+  setEventBuffering(enabled) {
+    if (typeof enabled === 'boolean' || enabled === null) {
+      this.eventBuffering = enabled;
+    }
+    return this;
+  }
 
   setReferrerEnabled(enabled) {
     if (typeof enabled === 'boolean') {
@@ -164,10 +164,10 @@ class WTInitConfig {
       oaid_enabled: this.oaidEnabled,
       custom_device_id: this.customDeviceId,
       default_tracker: this.defaultTracker,
-//      app_secret: this.appSecret,
-//      secret_id: this.secretId,
-//      attribution_deeplink: this.attributionDeeplink,
-//      event_buffering_enabled: this.eventBuffering,
+      app_secret: this.appSecret,
+      secret_id: this.secretId,
+      attribution_deeplink: this.attributionDeeplink,
+      event_buffering_enabled: this.eventBuffering,
       log_level: this.logLevel,
       referrer_enabled: this.referrerEnabled
     };
